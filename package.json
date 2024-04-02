@@ -1,0 +1,28 @@
+{
+  "name": "commander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdilar/commander.git"
+  },
+  "keywords": [
+    "commander",
+    "args",
+    "npm",
+    "arguments"
+  ],
+  "author": "Saeed Abdilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdilar/commander/issues"
+  },
+  "homepage": "https://github.com/Abdilar/commander#readme",
+  "dependencies": {
+    "commander": "^12.0.0"
+  }
+}
