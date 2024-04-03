@@ -1,9 +1,16 @@
 const {program} = require('commander')
 
 program
-  .option('--version, -v', 'version of file')
-  .option('--file-name, -fn', 'the file name')
-program.parse();
+  .option('-e, --error', 'showing error message')
+  .option('-v, --version <version>', 'version of file')
+  .option('-fn, --file-name <file-name>', 'the file name')
+
+program.parse(process.argv);
 
 const options = program.opts();
-console.log({argv: process.argv, args: program.args, version: options.version, fileName: options.fileName, options})
+
+if (options.error) {
+  console.log('the showing error is enable', options.error);
+} else {
+  console.log('the showing error is disabled', {options});
+}
