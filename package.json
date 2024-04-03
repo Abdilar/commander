@@ -10,7 +10,10 @@
     "commander:error": "node index.js -e",
     "commander:version": "node index.js --version=1.1.0",
     "commander:combined": "node index.js -ev 1.1.22",
-    "commander:no-log": "node index.js --no-log"
+    "commander:no-log": "node index.js --no-log",
+    "commander:no-color": "node index.js",
+    "commander:required-color": "node index.js --color",
+    "commander:red-color": "node index.js --color=red"
   },
   "repository": {
     "type": "git",

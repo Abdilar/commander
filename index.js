@@ -6,6 +6,7 @@ program
   .option('-fn, --file-name <file-name>', 'the file name')
   .option('-p | --port <number>', 'port number', '8080')
   .option('--no-log', 'remove logs')
+  .option('-c, --color [value]', 'add color with optional value')
 
 program.parse(process.argv);
 
@@ -23,4 +24,12 @@ console.log('The port is ', options.port);
 
 if (!options.log) {
   console.log('The logs removed ', options.log);
+}
+
+if (options.color === undefined) {
+  console.log('no color');
+} else if (options.color === true) {
+  console.log('the color is required');
+} else {
+  console.log('the color is ', options.color);
 }
