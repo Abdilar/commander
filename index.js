@@ -11,6 +11,8 @@ const options = program.opts();
 
 if (options.error) {
   console.log('the showing error is enable', options.error);
-} else {
-  console.log('the showing error is disabled', {options});
+}
+
+if (options.version) {
+  console.log('the version is ', options.version);
 }
