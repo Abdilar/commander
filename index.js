@@ -5,6 +5,7 @@ program
   .option('-v, --version <version>', 'version of file')
   .option('-fn, --file-name <file-name>', 'the file name')
   .option('-p | --port <number>', 'port number', '8080')
+  .option('--no-log', 'remove logs')
 
 program.parse(process.argv);
 
@@ -19,3 +20,7 @@ if (options.version) {
 }
 
 console.log('The port is ', options.port);
+
+if (!options.log) {
+  console.log('The logs removed ', options.log);
+}

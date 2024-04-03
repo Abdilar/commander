@@ -9,7 +9,8 @@
     "commander:short": "node index.js -v 1.1.0 -fn index.js",
     "commander:error": "node index.js -e",
     "commander:version": "node index.js --version=1.1.0",
-    "commander:combined": "node index.js -ev 1.1.22"
+    "commander:combined": "node index.js -ev 1.1.22",
+    "commander:no-log": "node index.js --no-log"
   },
   "repository": {
     "type": "git",
