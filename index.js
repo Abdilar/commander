@@ -11,6 +11,8 @@ program
   // .requiredOption('-f, --force', 'the force flag is required')
   .option('-l, --letters <string...>', 'collection of characters')
 
+program.version('1.1.21', '-v, --version', 'output the current version')
+
 program.parse(process.argv);
 
 const options = program.opts();
