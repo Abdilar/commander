@@ -7,6 +7,8 @@ program
   .option('-p | --port <number>', 'port number', '8080')
   .option('--no-log', 'remove logs')
   .option('-c, --color [value]', 'add color with optional value')
+  // NOTE: this option is necessary on commander:required script
+  .requiredOption('-f, --force', 'the force flag is required')
 
 program.parse(process.argv);
 
