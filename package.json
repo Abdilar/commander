@@ -16,7 +16,8 @@
     "commander:red-color": "node index.js --color=red",
     "commander:required": "node index.js -f",
     "commander:letters": "node index.js --letters=a,s,d,e --color=black",
-    "commander:another-version": "node index.js -v"
+    "commander:another-version": "node index.js -v",
+    "commander:help": "node index.js --help"
   },
   "repository": {
     "type": "git",
