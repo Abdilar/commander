@@ -8,7 +8,8 @@ program
   .option('--no-log', 'remove logs')
   .option('-c, --color [value]', 'add color with optional value')
   // NOTE: this option is necessary on commander:required script
-  .requiredOption('-f, --force', 'the force flag is required')
+  // .requiredOption('-f, --force', 'the force flag is required')
+  .option('-l, --letters <string...>', 'collection of characters')
 
 program.parse(process.argv);
 
@@ -34,4 +35,8 @@ if (options.color === undefined) {
   console.log('the color is required');
 } else {
   console.log('the color is ', options.color);
+}
+
+if (options.letters) {
+  console.log('the letters are ', {letters: options.letters});
 }
