@@ -19,6 +19,7 @@ program
   .addOption(new Option('-g, --glass <size>', 'glass size').choices(['small', 'medium', 'large']))
   .addOption(new Option('-b, --bucket-name <name>', 'bucket name').env('BUCKET'))
   .addOption(new Option('-ds, --disable-server').conflicts(['bucketName']))
+  .addOption(new Option('-d, --donate').preset(35).argParser(parseFloat))
 
 program.parse(process.argv);
 
@@ -64,4 +65,8 @@ if (options.bucketName) {
 
 if (options.disableServer) {
   console.log('the disable server is on', options.disableServer);
+}
+
+if (options.donate) {
+  console.log('the donate is ', options.donate);
 }

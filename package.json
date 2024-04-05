@@ -22,7 +22,8 @@
     "commander:glass": "node index.js --glass=medium",
     "commander:bucket": "BUCKET=\"snapp shop\" node index.js",
     "commander:disable-server": "node index.js --disable-server",
-    "commander:disable-server-conflict": "node index.js --disable-server --bucket-name test-bucket"
+    "commander:disable-server-conflict": "node index.js --disable-server --bucket-name test-bucket",
+    "commander:donate": "node index.js --donate"
   },
   "repository": {
     "type": "git",
