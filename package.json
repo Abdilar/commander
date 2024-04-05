@@ -23,7 +23,8 @@
     "commander:bucket": "BUCKET=\"snapp shop\" node index.js",
     "commander:disable-server": "node index.js --disable-server",
     "commander:disable-server-conflict": "node index.js --disable-server --bucket-name test-bucket",
-    "commander:donate": "node index.js --donate"
+    "commander:donate": "node index.js --donate",
+    "commander:free-glass": "node index.js -fg"
   },
   "repository": {
     "type": "git",

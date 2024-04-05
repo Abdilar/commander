@@ -20,6 +20,7 @@ program
   .addOption(new Option('-b, --bucket-name <name>', 'bucket name').env('BUCKET'))
   .addOption(new Option('-ds, --disable-server').conflicts(['bucketName']))
   .addOption(new Option('-d, --donate').preset(35).argParser(parseFloat))
+  .addOption(new Option('-fg, --free-glass', 'small glass included free ').implies({glass: 'small'}))
 
 program.parse(process.argv);
 
@@ -69,4 +70,8 @@ if (options.disableServer) {
 
 if (options.donate) {
   console.log('the donate is ', options.donate);
+}
+
+if (options.freeGlass) {
+  console.log('the glass is free', options.freeGlass, options.glass);
 }
