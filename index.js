@@ -22,7 +22,7 @@ program
   .addOption(new Option('-d, --donate').preset(35).argParser(parseFloat))
   .addOption(new Option('-fg, --free-glass', 'small glass included free ').implies({glass: 'small'}))
 
-program.parse(process.argv);
+program.parse();
 
 const options = program.opts();
 
