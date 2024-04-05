@@ -13,8 +13,9 @@ program
 
 program.version('1.1.21', '-v, --version', 'output the current version')
 
-program.
-  addOption(new Option('-s, --secret', 'secret flag that is a boolean').hideHelp())
+program
+  .addOption(new Option('-s, --secret', 'secret flag that is a boolean').hideHelp())
+  .addOption(new Option('-t, --timeout <delay>', 'timeout in seconds').default(60, 'one minute'))
 
 program.parse(process.argv);
 
@@ -44,4 +45,8 @@ if (options.color === undefined) {
 
 if (options.letters) {
   console.log('the letters are ', {letters: options.letters});
+}
+
+if (options.timeout) {
+  console.log('the timeout is ', options.timeout);
 }

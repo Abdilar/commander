@@ -17,7 +17,8 @@
     "commander:required": "node index.js -f",
     "commander:letters": "node index.js --letters=a,s,d,e --color=black",
     "commander:another-version": "node index.js -v",
-    "commander:help": "node index.js --help"
+    "commander:help": "node index.js --help",
+    "commander:timeout": "node index.js --timeout 120"
   },
   "repository": {
     "type": "git",
