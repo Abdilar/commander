@@ -19,7 +19,8 @@
     "commander:another-version": "node index.js -v",
     "commander:help": "node index.js --help",
     "commander:timeout": "node index.js --timeout 120",
-    "commander:glass": "node index.js --glass=medium"
+    "commander:glass": "node index.js --glass=medium",
+    "commander:bucket": "BUCKET=\"snapp shop\" node index.js"
   },
   "repository": {
     "type": "git",
