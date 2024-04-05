@@ -20,7 +20,9 @@
     "commander:help": "node index.js --help",
     "commander:timeout": "node index.js --timeout 120",
     "commander:glass": "node index.js --glass=medium",
-    "commander:bucket": "BUCKET=\"snapp shop\" node index.js"
+    "commander:bucket": "BUCKET=\"snapp shop\" node index.js",
+    "commander:disable-server": "node index.js --disable-server",
+    "commander:disable-server-conflict": "node index.js --disable-server --bucket-name test-bucket"
   },
   "repository": {
     "type": "git",

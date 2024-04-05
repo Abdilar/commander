@@ -18,6 +18,7 @@ program
   .addOption(new Option('-t, --timeout <delay>', 'timeout in seconds').default(60, 'one minute'))
   .addOption(new Option('-g, --glass <size>', 'glass size').choices(['small', 'medium', 'large']))
   .addOption(new Option('-b, --bucket-name <name>', 'bucket name').env('BUCKET'))
+  .addOption(new Option('-ds, --disable-server').conflicts(['bucketName']))
 
 program.parse(process.argv);
 
@@ -59,4 +60,8 @@ if (options.glass) {
 
 if (options.bucketName) {
   console.log('the bucket name is ', options.bucketName);
+}
+
+if (options.disableServer) {
+  console.log('the disable server is on', options.disableServer);
 }
