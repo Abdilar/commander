@@ -1,4 +1,4 @@
-const {program} = require('commander')
+const {program, Option} = require('commander')
 
 program
   .option('-e, --error', 'showing error message')
@@ -12,6 +12,9 @@ program
   .option('-l, --letters <string...>', 'collection of characters')
 
 program.version('1.1.21', '-v, --version', 'output the current version')
+
+program.
+  addOption(new Option('-s, --secret', 'secret flag that is a boolean').hideHelp())
 
 program.parse(process.argv);
 
