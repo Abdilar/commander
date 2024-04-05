@@ -2,7 +2,7 @@ const {program} = require('commander')
 
 program
   .option('-e, --error', 'showing error message')
-  .option('-v, --version <version>', 'version of file')
+  .option('-nv, --new-version <version>', 'changing version of file')
   .option('-fn, --file-name <file-name>', 'the file name')
   .option('-p | --port <number>', 'port number', '8080')
   .option('--no-log', 'remove logs')
@@ -19,8 +19,8 @@ if (options.error) {
   console.log('the showing error is enable', options.error);
 }
 
-if (options.version) {
-  console.log('the version is ', options.version);
+if (options.newVersion) {
+  console.log('the new version is ', options.newVersion);
 }
 
 console.log('The port is ', options.port);

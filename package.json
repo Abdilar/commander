@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commander": "node index.js --version 1.1.0 --file-name index.js",
-    "commander:short": "node index.js -v 1.1.0 -fn index.js",
+    "commander": "node index.js --new-version 1.1.0 --file-name index.js",
+    "commander:short": "node index.js -nv 1.1.0 -fn index.js",
     "commander:error": "node index.js -e",
-    "commander:version": "node index.js --version=1.1.0",
+    "commander:version": "node index.js --new-version=1.1.0",
     "commander:combined": "node index.js -ev 1.1.22",
     "commander:no-log": "node index.js --no-log",
     "commander:no-color": "node index.js",
