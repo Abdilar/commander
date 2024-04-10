@@ -42,4 +42,24 @@ program
     console.log("connected to a server...", { server, username });
   });
 
+program
+  .command("drink")
+  .addArgument(
+    new commander.Argument("<drink-size>", "drink cup size").choices([
+      "small",
+      "medium",
+      "large",
+    ])
+  )
+  .addArgument(
+    new commander.Argument("[timeout]", "timeout in second").default(
+      60,
+      "one minute"
+    )
+  )
+  .action((drinkSize, timeout) => {
+    console.log("drink size: ", drinkSize);
+    console.log("timeout: ", timeout);
+  });
+
 program.parse();

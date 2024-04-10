@@ -32,7 +32,8 @@
     "command:create-alias": "node command.js cr test.js ./",
     "command:server-start": "node command.js server start",
     "command:server-stop": "node command.js server stop",
-    "command:connect": "node command.js https://localhost:8000"
+    "command:connect": "node command.js https://localhost:8000",
+    "command:drink": "node command.js drink small 120"
   },
   "repository": {
     "type": "git",
