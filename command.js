@@ -18,4 +18,20 @@ program
     console.log("created a file...");
   });
 
+function startSeverCommand() {
+  const server = new commander.Command("server");
+
+  server.command("start").action(() => {
+    console.log("started server....");
+  });
+
+  server.command("stop").action(() => {
+    console.log("stopped server....");
+  });
+
+  return server;
+}
+
+program.addCommand(startSeverCommand());
+
 program.parse();
