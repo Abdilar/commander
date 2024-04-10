@@ -27,7 +27,8 @@
     "commander:free-glass": "node index.js -fg",
     "options-custom:number": "node options-custom-processing.js -n 1e2",
     "options-custom:invalid-number": "node options-custom-processing.js -n fff",
-    "command": "node command.js tea"
+    "command": "node command.js tea",
+    "command:create": "node command.js create test.js './"
   },
   "repository": {
     "type": "git",
