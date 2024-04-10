@@ -34,4 +34,12 @@ function startSeverCommand() {
 
 program.addCommand(startSeverCommand());
 
+program
+  .name("connect")
+  .argument("<server>", "connect to specified server")
+  .argument("[username]", "username to connect to a server", "gust")
+  .action((server, username) => {
+    console.log("connected to a server...", { server, username });
+  });
+
 program.parse();
