@@ -14,9 +14,11 @@ program
   program
     .command('create <fileName> [destination]')
     .description('create a new file with the specified file name')
+    .alias('cr')
     .action((fileName, destination = '.') => {
       const dir = path.join(__dirname, destination, fileName)
       fs.writeFileSync(dir, '')
+      console.log('created a file...');
     })
 
   program.parse()

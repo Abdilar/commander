@@ -28,7 +28,8 @@
     "options-custom:number": "node options-custom-processing.js -n 1e2",
     "options-custom:invalid-number": "node options-custom-processing.js -n fff",
     "command": "node command.js tea",
-    "command:create": "node command.js create test.js './"
+    "command:create": "node command.js create test.js ./",
+    "command:create-alias": "node command.js cr test.js ./"
   },
   "repository": {
     "type": "git",
