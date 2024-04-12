@@ -33,7 +33,8 @@
     "command:server-start": "node command.js server start",
     "command:server-stop": "node command.js server stop",
     "command:connect": "node command.js https://localhost:8000",
-    "command:drink": "node command.js drink small 120"
+    "command:drink": "node command.js drink small 120",
+    "actions:name": "node action.js Saeed --title=first-action -d"
   },
   "repository": {
     "type": "git",
