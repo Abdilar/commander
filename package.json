@@ -37,7 +37,8 @@
     "actions:name": "node action.js Saeed --title=first-action -d",
     "actions:server": "node action.js server https://localhost --port=4000",
     "actions:sakit": "node action.js sakit install",
-    "hook:user": "node hook.js user --profile"
+    "hook:user": "node hook.js user --profile",
+    "hook:start": "node hook.js --trace start --port 9000 --delay 3 test.js --profile"
   },
   "repository": {
     "type": "git",

@@ -35,4 +35,19 @@ program
     }
   });
 
+program
+  .command("start")
+  .option("-d, --delay <seconds>", "how long to delay before starting")
+  .addOption(
+    new Option("-p, --port <number>", "port number").default(8080).env("PORT")
+  )
+  .action(async (options) => {
+    if (options.delay) {
+      await new Promise((resolve) =>
+        setTimeout(resolve, parseInt(options.delay) * 1000)
+      );
+    }
+    console.log(`Starting on port ${options.delay}`);
+  });
+
 program.parseAsync().then(() => {});
