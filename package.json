@@ -1,0 +1,62 @@
+{
+  "name": "commander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commander": "node index.js --new-version 1.1.0 --file-name index.js",
+    "commander:short": "node index.js -nv 1.1.0 -fn index.js",
+    "commander:error": "node index.js -e",
+    "commander:version": "node index.js --new-version=1.1.0",
+    "commander:combined": "node index.js -ev 1.1.22",
+    "commander:no-log": "node index.js --no-log",
+    "commander:no-color": "node index.js",
+    "commander:required-color": "node index.js --color",
+    "commander:red-color": "node index.js --color=red",
+    "commander:required": "node index.js -f",
+    "commander:letters": "node index.js --letters=a,s,d,e --color=black",
+    "commander:another-version": "node index.js -v",
+    "commander:help": "node index.js --help",
+    "commander:timeout": "node index.js --timeout 120",
+    "commander:glass": "node index.js --glass=medium",
+    "commander:bucket": "BUCKET=\"snapp shop\" node index.js",
+    "commander:disable-server": "node index.js --disable-server",
+    "commander:disable-server-conflict": "node index.js --disable-server --bucket-name test-bucket",
+    "commander:donate": "node index.js --donate",
+    "commander:free-glass": "node index.js -fg",
+    "options-custom:number": "node options-custom-processing.js -n 1e2",
+    "options-custom:invalid-number": "node options-custom-processing.js -n fff",
+    "command": "node command.js tea",
+    "command:create": "node command.js create test.js ./",
+    "command:create-alias": "node command.js cr test.js ./",
+    "command:server-start": "node command.js server start",
+    "command:server-stop": "node command.js server stop",
+    "command:connect": "node command.js https://localhost:8000",
+    "command:drink": "node command.js drink small 120",
+    "actions:name": "node action.js Saeed --title=first-action -d",
+    "actions:server": "node action.js server https://localhost --port=4000",
+    "actions:sakit": "node action.js sakit install",
+    "hook:user": "node hook.js user --profile",
+    "hook:start": "node hook.js --trace start --port 9000 --delay 3 test.js --profile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdilar/commander.git"
+  },
+  "keywords": [
+    "commander",
+    "args",
+    "npm",
+    "arguments"
+  ],
+  "author": "Saeed Abdilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdilar/commander/issues"
+  },
+  "homepage": "https://github.com/Abdilar/commander#readme",
+  "dependencies": {
+    "commander": "^12.0.0"
+  }
+}
