@@ -12,4 +12,12 @@ program
     console.log(`Thank-you ${title}${name}`);
   });
 
+program
+  .command('server')
+  .argument('<script>')
+  .option('-p, --port <port>', 'the port of server')
+  .action(function () {
+    console.error('Run script %s on port %s', this.args[0], this.opts().port);
+  })
+
 program.parse();
