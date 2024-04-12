@@ -36,7 +36,8 @@
     "command:drink": "node command.js drink small 120",
     "actions:name": "node action.js Saeed --title=first-action -d",
     "actions:server": "node action.js server https://localhost --port=4000",
-    "actions:sakit": "node action.js sakit install"
+    "actions:sakit": "node action.js sakit install",
+    "hook:user": "node hook.js user --profile"
   },
   "repository": {
     "type": "git",
